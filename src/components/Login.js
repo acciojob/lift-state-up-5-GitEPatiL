@@ -1,6 +1,6 @@
 import React from "react";
 
-function Login({setIsLoggedIn}){
+function Login({isLoggedIn,setIsLoggedIn}){
 
     const handleSubmit =(e)=>{
         e.preventDefault();
