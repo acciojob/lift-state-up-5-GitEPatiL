@@ -7,13 +7,16 @@ function Login({isLoggedIn,setIsLoggedIn}){
         setIsLoggedIn(true)
     }
     return(
-      <form onSubmit={handleSubmit}>
+      <>
+       <form onSubmit={handleSubmit}>
         <label>Username</label>
-        <input type="text" name="username" />
+        <input type="text" name="username" placeholder="enter username" required value={isLoggedIn.name}/><br/><br/>
         <label>password</label>
-        <input type="text" name="password" />
+        <input type="text" name="password" placeholder="enter password" required value={isLoggedIn.password}/><br/><br/>
         <button type="submit">submit</button>
-      </form>
+      </form> 
+      </>
+
     );
 }
 

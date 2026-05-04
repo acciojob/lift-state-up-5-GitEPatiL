@@ -8,8 +8,9 @@ const App = () => {
   return (
     <div>
         <h2>Lift State Up</h2>
+{isLoggedIn ? <p>You are logged IN</p> : <Login isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>}
 
-<Login isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>
+
         
         
     </div>
