@@ -9,9 +9,8 @@ const App = () => {
     <div>
         <h2>Lift State Up</h2>
 
-        {
-          isLoggedIn ? (<h3>You are logged in</h3>) : (<Login isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>)
-        }
+<Login isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>
+        
         
     </div>
   )
