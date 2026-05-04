@@ -10,9 +10,9 @@ function Login({isLoggedIn,setIsLoggedIn}){
       <>
        <form onSubmit={handleSubmit}>
         <label>Username</label>
-        <input type="text" name="username" placeholder="enter username" required value={isLoggedIn.name}/><br/><br/>
+        <input type="text" name="username" placeholder="enter username" required /><br/><br/>
         <label>password</label>
-        <input type="text" name="password" placeholder="enter password" required value={isLoggedIn.password}/><br/><br/>
+        <input type="password" name="password" placeholder="enter password" required /><br/><br/>
         <button type="submit">submit</button>
       </form> 
       </>
